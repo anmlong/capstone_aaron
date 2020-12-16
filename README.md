@@ -1,6 +1,7 @@
 # capstone_aaron
  Aaron's capstone project
 
+
 #Document your data, code, and other project components with a README file. This should follow best practices covered in the first part of the course, including (but not necessarily limited to):
 #Explanations of the directory structure and all included files.
 #Description of the data (with citation) and where it can be found online
@@ -12,18 +13,23 @@
 
 
 
-I will be analyzing the raw data from the paper entitled "Development of machine learning models for diagnosis of glaucoma." This analysis will help answer three questions. 
+I will be analyzing the raw data from the paper entitled "Development of machine learning models for diagnosis of glaucoma." This analysis will help answer three questions. I first looked at the paper and defined some of the key terms and looked up some normal values for the columns. I was interested in looking at glaucoma patients who have normal readings in some of the tests. I first looked to see if any glaucoma samples had normal readings in both ocular_pressure over and a mean deviation. 
 
 
 #Appropriate questions include performing data filtering/assessment/grouping followed by summary statistics/machine learning and assessing patterns using data visualization. Please note:
 
 An (oversimplified) example with questions/results: If you chose a dataset representing student enrollment in 200 different courses throughout ten years, your questions would be 1) Are all classes present across the entirety of the timeframe? (result is a yes or no, if no, include the number of classes that aren’t present), 2) What is the average enrollment in the largest 10 classes across ten years? (result is a table and line graph), 3) Does enrollment in each course vary with total enrollment across all classes? (result is a density plot with overlay of total enrollment)
 
-Question 1. ocular_pressure over 22 and a mean deviation (MD) below -2.0 are considered to be abnormal. Do all the glaucoma patients show both of these abnormlities? Show a scatter plot of the distribution.  
+#I used https://pandas.pydata.org, https://stackoverflow.com, and the lectures for problem solving.
 
-Question 2. comparing the glaucoma group and the healthy group, are there any differences in the mean age, ocular pressure, MD, PSD, GHT, cornea_thickness, or RNFL4.mean?
+Question 1. ocular_pressure over 22 and a mean deviation (MD) below -2.0 are considered to be abnormal. Do all the glaucoma patients show both of these abnormlities? How many of them have normal ocular pressure and MD values? Show scatter plots of different stages of the analysis. 
 
-Question 3. Out of all the mean comparisons, is there one column that is the best predictor of glaucoma. Why? Show a graph.
+
+Question 2. comparing the glaucoma group and the healthy group, are there any differences in the mean age, ocular pressure, MD, PSD, GHT, cornea_thickness, or RNFL4.mean? Out of all the mean comparisons, is there one column that is the best predictor of glaucoma. Why? Show a graph.  
+ 
+
+Question 3. 
+
 
 #We recommend you assess (and document) things like column headers and encoding of missing data as a part of your analysis. Some of these datasets are not particularly well-documented. The original manuscripts may provide additional context, but you will have the opportunity to describe the assumptions you made about the data and what could've been done to improve their reusability. The focus of this assignment is aligning code with data and interpreting conclusions, rather than performing rigorous tests.
 
@@ -41,7 +47,7 @@ RL-OD? OS?- They are Latin abbreviations: OS (oculus sinister) means the left ey
 description of data sets. 
 ds_test.csv - 100 cases of data
 ds_train.csv - 399 cases of data as training and validation
-ds_whole.csv
+ds_whole.csv - all 499 cases together
 
 #You should include at least two data visualizations in your project, and apply best practices in visualization design as described in the first part of our course.
 
