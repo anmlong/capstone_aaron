@@ -118,5 +118,6 @@ gl0 %>%
 #healthy samples: ocular_pressure (none), MD (none), PSD (none), GHT (none), cornea_thickness (none), RNFL4.mean (none)
 ```
 
-**Reproducibility**
+## **Reproducibility**
+#A written (markdown formatted) section at the end of one report titled “Reproducibility” that comments on the ease of reproducibility of your analysis and the analysis in the original paper, which reflects on the concepts covered in the first few weeks of class.
 
