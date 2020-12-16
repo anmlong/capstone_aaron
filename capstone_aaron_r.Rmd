@@ -118,17 +118,6 @@ gl0 %>%
 #healthy samples: ocular_pressure (none), MD (none), PSD (none), GHT (none), cornea_thickness (none), RNFL4.mean (none)
 ```
 
-no change with age  | change with age
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
-
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
-Reference Style Links and Images
-
 
 
 
