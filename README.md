@@ -5,7 +5,7 @@
 
 I will be analyzing the raw data from the paper entitled *Development of machine learning models for diagnosis of glaucoma.* This analysis looks at trends in glaucoma samples and healthy samples. 
 
-I first looked at the paper and defined some of the key terms and looked up some normal values for healthy samples. I was interested in looking at glaucoma patients who have normal readings in some of the tests. I first looked to see if any glaucoma samples had normal readings in both ocular_pressure and mean deviation. I then looked for any columns that seemed to be a better predictor of glaucoma. I finally looked at trends in age since I found glaucoma samples tended to be from patients who were older. This was so I could determine if any of these measurments changed with age and could be a predictor of glaucoma. 
+I first looked at the paper and defined some of the key terms and looked up some normal values for healthy samples. I was interested in looking at glaucoma patients who have normal readings in some of the tests. I first looked to see if any glaucoma samples had normal readings in both ocular_pressure and mean deviation. I made the assumption that ocular_pressure over 22 and a mean deviation (MD) below -2.0 are considered to be abnormal. I then looked for any columns that seemed to be a better predictor of glaucoma. I finally looked at trends in age since I found glaucoma samples tended to be from patients who were older. This was so I could determine if any of these measurments changed with age and could be a predictor of glaucoma. 
 
 
 ### **Question 1.**
@@ -17,7 +17,7 @@ Looking at the glaucoma group that had normal ocular pressure and MD values from
  
 
 ### **Question 3.** 
-From question 2 we know the mean age of glaucoma samples is around 9 years higher than healthy samples. Are there any other trends with age? Show these trends graphically.
+From question 2 we know the mean age of glaucoma samples is around 9 years higher than healthy samples. Are there any other trends with age? Show these trends graphically. Mention if this analysis is reproducable. 
 
 ### where to find the question documents
 Question 1 and 2 are in ipython notebook (capstone_aaron_Q1Q1.ipynb) and question 3 is a markdown (capstone_aaron_r.Rmd).
