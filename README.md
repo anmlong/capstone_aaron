@@ -1,4 +1,4 @@
-# capstone_aaron
+# predicting trends in glaucoma samples
  Aaron's capstone project
 
 ## **About the data**
