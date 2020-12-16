@@ -19,3 +19,7 @@ ocular_pressure-
 age-
 glaucoma-
 RL-
+
+ds_test.csv - 100 cases of data
+ds_train.csv - 399 cases of data as training and validation
+ds_whole.csv
