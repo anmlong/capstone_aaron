@@ -23,10 +23,10 @@ I will be analyzing the raw data from the paper entitled "Development of machine
 Question 1. ocular_pressure over 22 and a mean deviation (MD) below -2.0 are considered to be abnormal. Do all the glaucoma patients show both of these abnormlities? How many of them have normal ocular pressure and MD values? Show scatter plots of different stages of the analysis. 
 
 
-Question 2. Looking at the glaucoma group that had normal ocular pressure and MD values from question 1, are there any unique trends compared to the rest of the glaucoma samples? Are these samples more like the healthy samples than the glaucoma samples? Is there a one column that is the best predictor of glaucoma? Why? Show a graph.  
+Question 2. Looking at the glaucoma group that had normal ocular pressure and MD values from question 1, are there any unique trends compared to the rest of the glaucoma samples? Are these samples more like the healthy samples than the glaucoma samples? are there any columns that seem to be predictors of glaucoma? Is age a predictor? do any trends change with age?
  
 
-Question 3. 
+Question 3. From question 2 we know the mean age of glaucoma samples is around 9 years higher than healthy samples. Are there any other trends with age? Show these trends graphically.
 
 
 #We recommend you assess (and document) things like column headers and encoding of missing data as a part of your analysis. Some of these datasets are not particularly well-documented. The original manuscripts may provide additional context, but you will have the opportunity to describe the assumptions you made about the data and what could've been done to improve their reusability. The focus of this assignment is aligning code with data and interpreting conclusions, rather than performing rigorous tests.

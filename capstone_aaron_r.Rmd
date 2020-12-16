@@ -4,7 +4,11 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+library(GenomicRanges)
+library(tidyverse)
+library(ggplot2)
+gl <- read_csv("ds_whole.csv")
+#this reads the a tsv file and names it gl
 ```
 
 ## R Markdown
@@ -13,8 +17,105 @@ This is an R Markdown document. Markdown is a simple formatting syntax for autho
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
-```{r cars}
-summary(cars)
+```{r}
+gl %>%
+  print(n = 5)
+gl1 <- gl %>%
+  filter(glaucoma == "1")
+gl1 %>%
+  print(n=5)
+#I made a new data set of the glaucoma samples
+```
+```{r}
+gl %>%
+  ggplot(aes(x = age, y = ocular_pressure, )) +
+  geom_point()
+#looking for trends with age. With all the samples, the trend is for a higher ocular pressure with age.
+gl1 %>%
+  ggplot(aes(x = age, y = ocular_pressure, )) +
+  geom_point()
+#For glaucoma sample, the trend is for a higher ocular pressure with age
+gl0 %>%
+  ggplot(aes(x = age, y = ocular_pressure, )) +
+  geom_point()
+#for healthy samples there is no obvious trend
+```
+```{r}
+gl %>%
+  ggplot(aes(x = age, y = MD, )) +
+  geom_point()
+#looking for trends with MD. With all the samples, the trend is for a lower MD with age.
+gl1 %>%
+  ggplot(aes(x = age, y = MD, )) +
+  geom_point()
+#For glaucoma sample, the trend is for a lower MD with age
+gl0 %>%
+  ggplot(aes(x = age, y = MD, )) +
+  geom_point()
+#for healthy samples there is no change in MD with age
+```
+```{r}
+gl %>%
+  ggplot(aes(x = age, y = PSD, )) +
+  geom_point()
+#looking for trends with PSD. With all the samples, the trend is for a higher PSD with age.
+gl1 %>%
+  ggplot(aes(x = age, y = PSD, )) +
+  geom_point()
+#For glaucoma sample, the there is no obvious trend with PSD and age
+gl0 %>%
+  ggplot(aes(x = age, y = PSD, )) +
+  geom_point()
+#for healthy samples the trend is no obvious trend with PSD and age
+```
+```{r}
+gl %>%
+  ggplot(aes(x = age, y = GHT, )) +
+  geom_point()
+#looking for trends with GHT. With all the samples, There is no clear pattern with age. Mosty 0 or 2.
+gl1 %>%
+  ggplot(aes(x = age, y = GHT, )) +
+  geom_point()
+#For glaucoma sample, the there is no obvious trend with GHT and age. More 2's overall.
+gl0 %>%
+  ggplot(aes(x = age, y = GHT, )) +
+  geom_point()
+#for healthy samples there is no obvious trend with GHT and age. More 0's overall.
+```
+```{r}
+gl %>%
+  ggplot(aes(x = age, y = cornea_thickness, )) +
+  geom_point()
+#looking for trends with cornea thickness. With all the samples, There is no clear pattern with age.
+gl1 %>%
+  ggplot(aes(x = age, y = cornea_thickness, )) +
+  geom_point()
+#For glaucoma sample, the there is no obvious trend with cornea thickness and age.
+gl0 %>%
+  ggplot(aes(x = age, y = cornea_thickness, )) +
+  geom_point()
+#for healthy samples there is no obvious trend with cornea thickness and age.
+```
+
+```{r}
+gl %>%
+  ggplot(aes(x = age, y = RNFL4.mean, )) +
+  geom_point()
+#looking for trends with RNFL4.mean. With all the samples, There is no clear pattern with age.
+gl1 %>%
+  ggplot(aes(x = age, y = RNFL4.mean, )) +
+  geom_point()
+#For glaucoma sample, the there is no obvious trend with RNFL4.mean and age.
+gl0 %>%
+  ggplot(aes(x = age, y = RNFL4.mean, )) +
+  geom_point()
+#for healthy samples there is no obvious trend with RNFL4.mean and age.
+```
+```{r}
+#I looked at changes in the data with age. Trends that change with age.
+#overall: ocular_pressure (higher), MD (lower), PSD (higher), GHT (none), cornea_thickness (none), RNFL4.mean (none)
+#glaucoma samples: ocular_pressure (higher), MD  (lower), PSD (none), GHT (none), cornea_thickness (none), RNFL4.mean (none)
+#healthy samples: ocular_pressure (none), MD (none), PSD (none), GHT (none), cornea_thickness (none), RNFL4.mean (none)
 ```
 
 ## Including Plots
@@ -22,7 +123,6 @@ summary(cars)
 You can also embed plots, for example:
 
 ```{r pressure, echo=FALSE}
-plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
