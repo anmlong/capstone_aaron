@@ -11,21 +11,19 @@
 
 #A meaningful title and brief (markdown) introduction to each report.
 
-
+Question 1 and 2 are  ipython notebook (report_python.ipynb) and question 3 is a markdown (report_r.Rmd).
 
 I will be analyzing the raw data from the paper entitled "Development of machine learning models for diagnosis of glaucoma." This analysis will help answer three questions. I first looked at the paper and defined some of the key terms and looked up some normal values for the columns. I was interested in looking at glaucoma patients who have normal readings in some of the tests. I first looked to see if any glaucoma samples had normal readings in both ocular_pressure over and a mean deviation. 
 
 
 #Appropriate questions include performing data filtering/assessment/grouping followed by summary statistics/machine learning and assessing patterns using data visualization. Please note:
 
-An (oversimplified) example with questions/results: If you chose a dataset representing student enrollment in 200 different courses throughout ten years, your questions would be 1) Are all classes present across the entirety of the timeframe? (result is a yes or no, if no, include the number of classes that aren’t present), 2) What is the average enrollment in the largest 10 classes across ten years? (result is a table and line graph), 3) Does enrollment in each course vary with total enrollment across all classes? (result is a density plot with overlay of total enrollment)
-
 #I used https://pandas.pydata.org, https://stackoverflow.com, and the lectures for problem solving.
 
 Question 1. ocular_pressure over 22 and a mean deviation (MD) below -2.0 are considered to be abnormal. Do all the glaucoma patients show both of these abnormlities? How many of them have normal ocular pressure and MD values? Show scatter plots of different stages of the analysis. 
 
 
-Question 2. comparing the glaucoma group and the healthy group, are there any differences in the mean age, ocular pressure, MD, PSD, GHT, cornea_thickness, or RNFL4.mean? Out of all the mean comparisons, is there one column that is the best predictor of glaucoma. Why? Show a graph.  
+Question 2. Looking at the glaucoma group that had normal ocular pressure and MD values from question 1, are there any unique trends compared to the rest of the glaucoma samples? Are these samples more like the healthy samples than the glaucoma samples? Is there a one column that is the best predictor of glaucoma? Why? Show a graph.  
  
 
 Question 3. 
