@@ -121,6 +121,7 @@ gl0 %>%
 
 
 
+
 ## **Reproducibility**
 
 The analysis of this data, specifically looking at trends with age, is reproducable. I created scatter plots comparing trends and then based on the visual representation of the data came up with conclusions of the trends. Other independent researchers will be able to come up with the same conclusions by using my code or by using other similar methods.
